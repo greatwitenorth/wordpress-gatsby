@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 export default () => (
     <Layout>
         <Box>
-            <Heading as="h1" size="xl">Oops, that's a 404</Heading>
+            <Heading as="h1" size="xl">Oops, that page doesn't exist</Heading>
         </Box>
     </Layout>
 )
