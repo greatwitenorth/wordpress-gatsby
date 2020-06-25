@@ -25,7 +25,7 @@ module.exports = {
         },
         url:
           process.env.WPGRAPHQL_URL ||
-          `http://headless-wordpress.localhost/graphql`,
+          `https://cms.teamgi.dev/graphql`,
         verbose: true,
         schema: {
           queryDepth: 5,
@@ -96,5 +96,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify-cache`,
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "ttg-wp-test",
+        protocol: "https",
+        hostname: "www.example.com",
+      },
+    }
   ],
 }

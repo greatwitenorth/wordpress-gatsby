@@ -24,7 +24,7 @@ function BlogPost({ data }) {
           </Box>
         )}
 
-      <p dangerouslySetInnerHTML={{ __html: content }} />
+      <div dangerouslySetInnerHTML={{ __html: content }} />
 
       <br />
       {!!nextPage && (
